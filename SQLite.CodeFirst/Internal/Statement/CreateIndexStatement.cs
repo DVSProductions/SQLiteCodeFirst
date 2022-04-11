@@ -20,7 +20,7 @@ namespace SQLite.CodeFirst.Statement
         {
             var stringBuilder = new StringBuilder(Template);
 
-            stringBuilder.Replace("{unique}", IsUnique ? "UNIQUE" : string.Empty);
+            stringBuilder.Replace("{unique}", IsUnique ? "UNIQUE" : String.Empty);
             stringBuilder.Replace("{index-name}", Name);
             stringBuilder.Replace("{table-name}", Table);
 

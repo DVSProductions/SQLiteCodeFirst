@@ -1,14 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
 namespace SQLite.CodeFirst.Statement {
-	internal class CreateDatabaseStatement : ACollectionStatement {
+	internal class DropTablesAndIndexesStatement : ACollectionStatement {
 		private const string StatementSeperator = "\r\n";
 
-		public CreateDatabaseStatement() { }
+		public DropTablesAndIndexesStatement() { }
 
-		public CreateDatabaseStatement(IEnumerable<IStatement> statements) {
+		public DropTablesAndIndexesStatement(IEnumerable<IStatement> statements) {
 			foreach (var statement in statements) {
 				Add(statement);
 			}

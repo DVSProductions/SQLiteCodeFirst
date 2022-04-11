@@ -1,7 +1,5 @@
-﻿namespace SQLite.CodeFirst.Statement
-{
-    public interface IStatement
-    {
-        string CreateStatement();
-    }
+﻿namespace SQLite.CodeFirst.Statement {
+	public interface IStatement {
+		string CreateStatement();
+	}
 }
